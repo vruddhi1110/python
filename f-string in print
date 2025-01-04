@@ -1,0 +1,5 @@
+Using f-string:
+
+print(f"The area of the circle is: {area}")
+The variable is embedded directly in the string, 
+making the code cleaner and easier to read
