@@ -1,0 +1,20 @@
+# cook your dish here
+def matrix_mutiplication(A , B):
+    
+    row_of_A = len(A) 
+    col_of_A   = len(A[0])
+    row_of_B  = len(B)
+    col_of_B  = len(B[0])
+    
+    result = [[0 for in_range(col_of_B)] for _in range( row_of_A ) ]
+    
+    for i in range( row_of_A ):
+        for j in range(col_of_B ):
+            for k in range(col_of_A ):
+                result[i][j] += A[i][k] * B[k][j]
+    return result
+    
+    
+    
+    
+    
