@@ -1,0 +1,43 @@
+//jyare aapde metrix banavie tyare intilize karvu j pade , jo n karvu hoy to aavi rite lakhvu 
+
+#If you don't want to initialize the elements to any specific value, you can do one of the following:
+
+Option 1: Use None
+
+result = [[None for _ in range(K)] for _ in range(N)]
+
+Option 2: Use Empty Strings or Other Placeholders
+
+If you'd like to use an empty placeholder (like an empty string), you can do this:
+
+
+result = [["" for _ in range(K)] for _ in range(N)]
+
+Option 3: Start with an Empty Matrix and Append Later
+
+If you truly dresult = []  # Start with an empty matrix
+
+# Append rows dynamically
+for _ in range(N):
+    result.append([])  # Add an empty row
+
+# Example of adding elements dynamically
+result[0].append(5)  # Add 5 to the first row
+on’t want to initialize anything right away,
+you can start with an empty matrix and append rows or elements later:
+
+
+
+
+// jo 0 thi intilize karwano hoy to ,
+
+
+result = [[0 for _ in range(4)] for _ in range(3)]
+
+
+
+
+
+
+
+
