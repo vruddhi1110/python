@@ -1,0 +1,38 @@
+if you want to allow input in a single line (like "1 2 3"), you can slightly modify the code like this
+
+n = int(input())
+num = list(map(int, input().split()))  # takes all elements in one line
+print(num)
+
+
+
+
+3
+1 2 3
+ For float (Decimal Numbers)
+
+numbers = list(map(float, input().split()))
+
+
+
+
+For Custom Functions
+
+You can also use your own custom functions with map().
+Example:
+
+If you want to take inputs and calculate their squares:
+
+
+def square(x):
+    return int(x) ** 2
+
+squares = list(map(square, input().split()))
+
+
+
+
+
+
+
+
