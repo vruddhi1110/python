@@ -112,7 +112,12 @@ the set using the in keyword,
 which is faster in a set compared to a list.
 
 
+end=" " in print():
 
+    By using end=" ", the elements of 
+a row are printed on the same
+line with a space separating them,
+instead of the default newline.
 
 
 
