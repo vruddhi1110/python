@@ -1,0 +1,24 @@
+# prime num mate ni con 
+
+# jo n <= 1 then it is not prime 
+
+# jo 2 thi n^1/2  karo and n divisible hoy aama thi ekay sathe then it is not prime
+
+# code:
+
+import math
+if n <= 1:
+return False 
+
+for i in range( 2 , math.sqrt(n) + 1) :
+
+if n % i == 0 
+return False 
+
+
+return True 
+
+
+# python ma True , False hoy e in bulit hoy so extra library include n karvi pade 
+# sqrt mate math import karvi pade 
+
