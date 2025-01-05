@@ -43,3 +43,161 @@ If you're working with binary files, such as images or videos
 with open("filename.bin", "rb") as file:  # 'rb' means read binary
     binary_data = file.read()
     print(binary_data)
+
+
+. Read a file and count the number of lines, words, and characters
+filename = "sample.txt"  # Replace with your file name
+
+with open(filename, "r") as file:
+    lines = file.readlines()  # Read all lines into a list
+
+# Counting lines, words, and characters
+line_count = len(lines)
+word_count = sum(len(line.split()) for line in lines)
+char_count = sum(len(line) for line in lines)
+
+print(f"Lines: {line_count}")
+print(f"Words: {word_count}")
+print(f"Characters: {char_count}")
+
+
+Overview
+
+This expression is used to calculate the total number of words in a file. Here's what each part of it does:
+
+    for line in lines:
+        What it does: Iterates over each line in the file.
+        lines: This is a list where each element 
+represents one line of text in
+the file
+(obtained using readlines() or by splitting the file 
+content into lines).
+Overview
+
+This expression is used to calculate the total number of 
+words in a file. Here's what each part of it does:
+
+    for line in lines:
+        What it does: Iterates over each line in the file.
+        lines: This is a list where each element represents 
+one line of text in the file (obtained using readlines()
+or by splitting the file content into lines).
+
+
+line.split():
+
+    What it does: Splits the current line into a 
+list of words by spaces.
+    Default Behavior: By default, split() splits
+the string wherever there is whitespace (spaces, tabs, or newlines).
+
+
+
+len(line.split()):
+
+    What it does: Counts the number of words in the 
+current line by finding the length 
+of the list created by line.split().
+
+for line in lines (in a generator expression):
+
+    What it does: Creates a generator that 
+produces the word count for each line in the file.
+
+
+sum(...):
+
+    What it does: Adds up all the word counts for all lines in the file.
+
+
+
+
+
+
+
+#Find and replace a specific word in a file
+
+Python provides the replace() method, which is used 
+to replace occurrences of a substring within a string
+with another substring. It does not modify the original 
+string but returns a new string with the replacements.
+
+string.replace(old, new[, count])
+
+Parameters:
+
+    old: The substring you want to replace.
+    new: The substring you want to replace old with.
+    count (optional): The number of occurrences to replace. 
+If omitted, it replaces all occurrences.
+
+Return Value:
+
+    A new string with the specified replacements.
+
+EXAMPLES :
+1)  Replacing all occurrences:
+
+text = "hello world, hello Python"
+result = text.replace("hello", "hi")
+print(result)  # Output: "hi world, hi Python"
+
+2)    Replacing only the first occurrence:
+
+text = "hello world, hello Python"
+result = text.replace("hello", "hi", 1)
+print(result)  # Output: "hi world, hello Python"
+
+
+3)  No match (string remains unchanged): 
+
+text = "hello world"
+result = text.replace("bye", "hi")
+print(result)  # Output: "hello world"
+
+
+
+
+
+
+
+
+
+
+filename = "sample.txt"  # Replace with your file name
+find_word = "Python"     # Word to find
+replace_word = "Programming"  # Word to replace it with
+
+# Read the content of the file
+with open(filename, "r") as file:
+    content = file.read()
+
+# Replace the word
+updated_content = content.replace(find_word, replace_word)
+
+# Write the updated content back to the file
+with open(filename, "w") as file:
+    file.write(updated_content)
+
+print(f"Replaced '{find_word}' with '{replace_word}' in {filename}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
