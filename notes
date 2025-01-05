@@ -119,6 +119,7 @@ a row are printed on the same
 line with a space separating them,
 instead of the default newline.
 
+print(line.strip())   # Strip removes trailing newline or spaces
 
 
 
