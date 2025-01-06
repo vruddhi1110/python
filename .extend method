@@ -1,0 +1,7 @@
+arr.extend(ARR)  # Append all elements of ARR to arr
+
+Merging Arrays:
+
+    We use arr.extend(ARR) to merge the two arrays (arr and ARR). 
+    This effectively adds all elements
+    from ARR to arr in a single list.
