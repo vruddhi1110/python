@@ -1,0 +1,40 @@
+#def recursion(arr , index = 0 , current_ss = []):
+
+
+aama ghana argument che but jyare function ne call kari tyare 
+
+khali arr j aapi baki vastu n aapi to chale e by default value j lai le 
+
+
+
+
+
+
+
+
+arr: This is the required argument (no default value). You must provide it when calling 
+the function.
+index=0: This has a default value of 0. If you don't pass a value for index,
+Python automatically uses 0 as the default.
+current_subset=[]: This also has a default value of an empty list ([]). 
+
+
+If you don't pass a value for current_subset, Python automatically uses the empty list as the default.
+
+How the Call Works
+
+When you call:
+
+
+generate_subsets(arr)
+
+    Default Arguments in Python
+
+In Python, when you define a function with parameters that have 
+default values, you don't need to explicitly pass values for 
+those parameters when calling the function. 
+If you omit them, the function uses the default values you 
+specified in its definition.
+
+
+
