@@ -113,6 +113,19 @@ for key in my_dict:
 
 
 
+.keys(): Returns only the keys of the dictionary.
+
+freq.keys()  # Output: ['a', 'b', 'c']
+.values(): Returns only the values of the dictionary.
+
+freq.values()  # Output: [3, 2, 1]
+
+
+.items(): Returns both keys and values as key-value pairs (tuples).
+
+
+freq.items()  # Output: [('a', 3), ('b', 2), ('c', 1)]
+
 
 
 
